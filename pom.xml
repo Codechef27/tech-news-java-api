@@ -14,7 +14,7 @@
 	<name>tech-news-java-api</name>
 	<description>Tech News Java Project</description>
 	<properties>
-		<java.version>19</java.version>
+		<java.version>8</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
