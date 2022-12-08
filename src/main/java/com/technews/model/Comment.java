@@ -14,10 +14,10 @@ public class Comment implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer id;
-    private String commentText;
-    private Integer userId;
-    private Integer postId;
+    public Integer id;
+    public String commentText;
+    public Integer userId;
+    public Integer postId;
 
     public Comment() {
     }

@@ -17,28 +17,28 @@ public class Post implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer id;
-    private String title;
-    private String postUrl;
+    public Integer id;
+    public String title;
+    public String postUrl;
     @Transient
-    private String userName;
+    public String userName;
     @Transient
-    private int voteCount;
-    private Integer userId;
+    public int voteCount;
+    public Integer userId;
 
     @NotNull
     @Temporal(TemporalType.DATE)
     @Column(name = "posted_at")
-    private Date postedAt = new Date();
+    public Date postedAt = new Date();
 
     @NotNull
     @Temporal(TemporalType.DATE)
     @Column(name = "updated_at")
-    private Date updatedAt = new Date();
+    public Date updatedAt = new Date();
 
     // Need to use FetchType.LAZY to resolve multiple bags exception
     @OneToMany(mappedBy = "postId", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-    private List<Comment> comments;
+    public List<Comment> comments;
 
 
     public Post() {

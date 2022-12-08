@@ -14,9 +14,9 @@ public class Vote implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer id;
-    private Integer userId;
-    private Integer postId;
+    public Integer id;
+    public Integer userId;
+    public Integer postId;
 
     public Vote() {
     }
