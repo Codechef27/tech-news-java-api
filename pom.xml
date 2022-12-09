@@ -14,7 +14,7 @@
 	<name>tech-news-java-api</name>
 	<description>Tech News Java Project</description>
 	<properties>
-		<java.version>8</java.version>
+		<java.version>17</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -52,6 +52,7 @@
 			<groupId>org.springframework.session</groupId>
 			<artifactId>spring-session-jdbc</artifactId>
 		</dependency>
+
 	</dependencies>
 
 	<build>
